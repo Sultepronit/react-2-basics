@@ -2,21 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const returnRandomInt = () => {
+    return Math.floor(Math.random() * 1000);
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edited <code>src/App.js</code> !
+          Hello World!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <p>[1, 2, 3]</p>
+        <p>{[1, 2, 3]}</p>
+        <p>1 + 2</p>
+        <p>{1 + 2}</p>
+        <p>Here's your random number: {returnRandomInt()}</p>
       </header>
     </div>
   );
