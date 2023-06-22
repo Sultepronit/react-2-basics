@@ -1,11 +1,16 @@
-import React from 'react';
+function Header() {
+    const h1Style = {
+        fontStyle: 'italic'
+    };
 
-const Header = () => {
-  return (
-    <header>
-        <h1>Groceries List</h1>
-    </header>
-  )
-}
+    return (
+        <header style={{
+            backgroundColor: 'blue',
+            color: 'white'
+        }}>
+            <h1 style={h1Style}>Groceries List</h1>
+        </header>
+    )
+} 
 
 export default Header;
