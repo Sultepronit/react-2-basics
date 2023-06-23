@@ -1,6 +1,7 @@
 function Header() {
     const h1Style = {
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        fontSize: '1.5em'
     };
 
     return (
